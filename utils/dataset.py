@@ -696,7 +696,6 @@ class VideoBLIPDataset_V2(Dataset):
             }
         else:
             raise Exception
-        assert frame_step != 3, frame_step
 
         # mask = np.array(0)
         mask = get_moved_area_mask(video.permute([0, 2, 3, 1]).numpy())

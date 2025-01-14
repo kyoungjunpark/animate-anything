@@ -264,7 +264,6 @@ class MaskStableVideoDiffusionPipeline(StableVideoDiffusionPipeline):
             callback_on_step_end_tensor_inputs: List[str] = ["latents"],
             return_dict: bool = True,
             n_input_frames=5,
-            frame_step=None,
             signal_latent=None,
             infrared_video=None,
             signal=None,
